@@ -1,0 +1,23 @@
+{
+  "name": "mvc-model-generator",
+  "version": "1.0.3",
+  "description": "A node script to generate directories for mvc-model apps.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MB-PieSec/MVC-Model-Generator.git"
+  },
+  "keywords": [
+    "mvc"
+  ],
+  "author": "MB-PieSec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MB-PieSec/MVC-Model-Generator/issues"
+  },
+  "homepage": "https://github.com/MB-PieSec/MVC-Model-Generator#readme"
+}
