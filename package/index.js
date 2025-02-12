@@ -33,19 +33,23 @@ async function runCommand(command){
     }
 }
 async function createDirectories(filePath){
-    await runCommand(`cd ${filePath}`);
-    for (const dir of fileTree){
-        if (typeof dir !== "object"){
-            await runCommand(`mkdir ${dir}`)
-            
-        } else {
-            for (const i of Object.entries(dir)){
-                await runCommand(`mkdir ${i[0]}`);
-                for (const x of i[1]){
-                    await runCommand(`cd ${i[0]} && mkdir ${x}`);
+    try {
+        await runCommand(`cd ${filePath}`);
+        for (const dir of fileTree){
+            if (typeof dir !== "object"){
+                await runCommand(`mkdir ${dir}`)
+                
+            } else {
+                for (const i of Object.entries(dir)){
+                    await runCommand(`mkdir ${i[0]}`);
+                    for (const x of i[1]){
+                        await runCommand(`cd ${i[0]} && mkdir ${x}`);
+                    }
                 }
             }
         }
+    } catch (error) {
+        console.error(error);
     }
 
 }
