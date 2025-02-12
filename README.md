@@ -77,4 +77,6 @@ This project is licensed under the **ISC License**. See the [LICENSE](LICENSE) f
 ## **📮 Contributing**
 Feel free to submit issues or pull requests on GitHub:  
 🔗 [GitHub Repository](https://github.com/MB-PieSec/MVC-Model-Generator)  
+🔗 [NPM Repository](https://www.npmjs.com/package/mvc-model-generator?activeTab=readme)
+
 
